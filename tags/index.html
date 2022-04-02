@@ -33,7 +33,7 @@
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
-    
+
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
 
   <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
@@ -58,13 +58,13 @@
 
 
   
-  
+
   <div class="site-header-image">
-    <img id="originBg" width="100%" alt="Hike News" src="">
+    <img id="originBg" width="100%" alt="UMI" src="">
   </div>
 
   <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
   </div>
 
   <script>
@@ -82,21 +82,25 @@
 
 
 
-<header id="allheader" class="site-header" role="banner" 
+<header id="allheader" class="site-header" role="banner"
    style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
-          <h1 class="site-title">
+          <div class="site-title" style="overflow:hidden;position:relative;">
             
+              <div style="float:left;">
               <a href="/" rel="home" >
-                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /css/images/ava.png">
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="UMI" src=" /css/images/ava.png">
               </a>
+              </div>
+
+              <div style="float:right; position:absolute;bottom:0px;right:0px;"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110  src="//music.163.com/outchain/player?type=0&id=7362249125&auto=1&height=90"></iframe></div>
             
-          </h1>
+          </div>
+
           
-          
-            
+
           <nav id="main-navigation" class="main-navigation" role="navigation">
             <a class="nav-open">Menu</a>
             <a class="nav-close">Close</a>
@@ -208,11 +212,12 @@
 	      &copy; 2022 羊羊的博客 All Rights Reserved.
         
             <span id="busuanzi_container_site_uv">
-              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次
               本站总访问量<span id="busuanzi_value_site_pv"></span>次
             </span>
           
       </div>
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=7362249125&auto=1&height=32"></iframe>
       <div class="site-credit">
         Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
       </div>
@@ -235,8 +240,9 @@
       var headerblur = document.getElementById("header-blur");
       headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
-    
+
 </script>
+
     
 <div style="display: none;">
   <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
