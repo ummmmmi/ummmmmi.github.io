@@ -59,31 +59,9 @@
 
   
 
-  <div class="site-header-image">
-    <img id="originBg" width="100%" alt="UMI" src="">
-  </div>
-
-  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
-  </div>
-
-  <script>
-        var imgUrls = "https://source.unsplash.com/collection/954550/1920x1080".split(",");
-        var random = Math.floor((Math.random() * imgUrls.length ));
-        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-          document.getElementById("originBg").src=imgUrls[random];
-          document.getElementById("blurBg").src=imgUrls[random];
-        } else {
-          document.getElementById("originBg").src='/' + imgUrls[random];
-          document.getElementById("blurBg").src='/' + imgUrls[random];
-        }
-    </script>
-
-
-
 
 <header id="allheader" class="site-header" role="banner"
-   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -138,7 +116,7 @@
         <div class="archives-tags-wrap">
             
                 <blockquote>
-                <a href="/tags/album/" style="font-size: 14px;">album</a> <a href="/tags/secret/" style="font-size: 14px;">secret</a> <a href="/tags/%E4%B9%A6-%E5%BD%B1-%E5%89%A7-%E7%95%AA/" style="font-size: 14px;">书/影/剧/番</a> <a href="/tags/%E8%A7%82%E5%AF%9F%E6%97%A5%E8%AE%B0/" style="font-size: 14px;">观察日记</a> <a href="/tags/%E9%97%B2%E8%AF%9D/" style="font-size: 28px;">闲话</a>
+                <a href="/tags/album/" style="font-size: 21px;">album</a> <a href="/tags/secret/" style="font-size: 14px;">secret</a> <a href="/tags/%E4%B9%A6-%E5%BD%B1-%E5%89%A7-%E7%95%AA/" style="font-size: 14px;">书/影/剧/番</a> <a href="/tags/%E8%A7%82%E5%AF%9F%E6%97%A5%E8%AE%B0/" style="font-size: 14px;">观察日记</a> <a href="/tags/%E9%97%B2%E8%AF%9D/" style="font-size: 28px;">闲话</a>
                 </blockquote>
             
         </div>
@@ -147,13 +125,13 @@
         <!-- 
         <div id='tag_cloud' class="tags">
             
+                <a href="#album" title="album" rel="2">album</a>
+            
                 <a href="#secret" title="secret" rel="1">secret</a>
             
                 <a href="#闲话" title="闲话" rel="3">闲话</a>
             
                 <a href="#观察日记" title="观察日记" rel="1">观察日记</a>
-            
-                <a href="#album" title="album" rel="1">album</a>
             
                 <a href="#书/影/剧/番" title="书/影/剧/番" rel="1">书/影/剧/番</a>
             
@@ -168,6 +146,25 @@
                 <h1 class="archive-tag">album</h1>
             </div>
             <div class="archives">
+                
+                    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+
+      <a href="/2022/05/20/520%E5%BD%93%E5%A4%A9/" class="archive-article-date">
+		  <time datetime="2022-05-20T02:45:13.000Z" itemprop="datePublished">May 20, 2022</time>
+	  </a>
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/2022/05/20/520%E5%BD%93%E5%A4%A9/">520的花</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+                    
                 
                     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
@@ -393,9 +390,6 @@
 
 
     <!-- headerblur min height -->
-    
-      var headerblur = document.getElementById("header-blur");
-      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
 
 </script>
