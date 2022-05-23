@@ -59,9 +59,31 @@
 
   
 
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="UMI" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
+  </div>
+
+  <script>
+        var imgUrls = "https://source.unsplash.com/collection/954550/1920x1080".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
 
 <header id="allheader" class="site-header" role="banner"
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -125,9 +147,9 @@
         <!-- 
         <div id='tag_cloud' class="tags">
             
-                <a href="#album" title="album" rel="2">album</a>
-            
                 <a href="#secret" title="secret" rel="1">secret</a>
+            
+                <a href="#album" title="album" rel="2">album</a>
             
                 <a href="#闲话" title="闲话" rel="3">闲话</a>
             
@@ -157,7 +179,7 @@
       
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2022/05/20/520%E5%BD%93%E5%A4%A9/">520的花</a>
+      <a class="archive-article-title" href="/2022/05/20/520%E5%BD%93%E5%A4%A9/">はな</a>
     </h1>
   
 
@@ -390,6 +412,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
 
 </script>
