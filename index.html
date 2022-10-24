@@ -57,9 +57,31 @@
 
   
 
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="UMI" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
+  </div>
+
+  <script>
+        var imgUrls = "https://source.unsplash.com/collection/954550/1920x1080".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
 
 <header id="allheader" class="site-header" role="banner"
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -163,13 +185,13 @@
 <p>看动画第一集的时候，我以为藤本树会集中地画几张电次过去的贫穷生活。这样在开篇就给主角定一个很惨的基调。毕竟他家人只有啵奇塔这只恶魔小狗狗。</p>
 <p>但是他没有。</p>
 <p>后续电次帮帕瓦找猫，回忆起了一幕。</p>
-<p>![“就那样抱着啵奇塔睡着了”](&#x2F;img&#x2F;csm 3.jpg)</p>
+<p><img src="/./img/csm3.jpg" alt="“就那样抱着啵奇塔睡着了”"></p>
 <p>哇，看到这里眼睛好酸。</p>
 <p>还有个小番外，虽然只有几格。但是真的把该说的都说了。会让人觉得，啊，原来以前他们就是这样过来的。</p>
-<p>![小番外](&#x2F;img&#x2F;csm 4.jpg)</p>
+<p><img src="/./img/csm4.jpg" alt="小番外"></p>
 <p>还有一些很有趣的对比。</p>
-<p>![“秋和我一起去民间吧”](&#x2F;img&#x2F;csm 2.jpg)</p>
-<p>![“这可真不像你”](&#x2F;img&#x2F;csm 1.png)</p>
+<p><img src="/./img/csm2.jpg" alt="“秋和我一起去民间吧”"></p>
+<p><img src="/./img/csm1.png" alt="“这可真不像你”"></p>
 <p>心里有了牵挂，就会很怕死哦。</p>
 <p>打雪仗那段分镜和虚实转换真的很震撼，太长了就不截了。</p>
 <p>树，你真的很会。</p>
@@ -884,6 +906,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
 
 </script>
