@@ -57,9 +57,31 @@
 
   
 
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="UMI" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
+  </div>
+
+  <script>
+        var imgUrls = "https://source.unsplash.com/collection/954550/1920x1080".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
 
 <header id="allheader" class="site-header" role="banner"
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -139,7 +161,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>所有的喜欢都有年龄段限制。一旦超过特定期限，就会变得再难和作品共情。失去这样的快乐，算是一种遗憾吗？</p>
-<p>去年看全职猎人的时候，对于奇犽那样典型的少年漫男主性格已经理解不能了。所以前面一直看得兴致缺缺，直到幻影旅团的出现，才发现富坚义博在人物设定这一块真的有点东西。</p>
+<p>去年看全职猎人的时候，对于杰那样典型的少年漫男主性格已经理解不能了。所以前面一直看得兴致缺缺，直到幻影旅团的出现，才发现富坚义博在人物设定这一块真的有点东西。</p>
 <p>整个动漫，最出彩的是蚂蚁篇。<br>但是结局让我有点失望。</p>
 <p>蚂蚁篇前期每一集都是突破人想象的存在。<br>首先很难想象得到蚁后可以通过进食来改善后代基因。恐怖的是她真的什么都吃。<br>也没想到进化速度这么快……下一代马上就有了翅膀或者其他生物独有的生物功能。而且吃人就能得到人类的思考能力和学习能力。<br>人类作为目前主宰地球的灵长类生物，从猴子进化来花了500万年的时间。但是奇美拉蚁只需要一顿饭的功夫就能获得人类的进化结果。这也是最让我觉得恐惧的地方，可以在最短的时间集所有生物的大成。</p>
 <p>三护卫之一的猫女动动手指头就把一流猎人凯特给干掉。护卫已经强到离谱，更别说王了。<br>当时我还在期待后续会不会交代奇美拉蚁有致命弱点，就像游戏里一些难打的BOSS，玩家仔细找的话总有突破口。不然人类怎么赢呢。</p>
@@ -406,7 +428,7 @@
 
           
             <div class="entry-thumbnail">
-              <a href="/2022/01/21/Secret/"><img src="http://lorempixel.com/750/450/city/6" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+              <a href="/2022/01/21/Secret/"><img src="http://lorempixel.com/750/450/city/3" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
             </div>
           
           <div class="entry-summary">
@@ -487,6 +509,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
 
 </script>
