@@ -19,7 +19,7 @@
 <meta property="og:description" content="关于小白，印象最深刻的事，除了第一次见他的场景，就是在他家留宿那次。当时我甚至没来得及编一个合适的理由，因为知道他是一个人住，所以直接问到长沙后能不能去他那借住一晚。在忐忑和抓狂无数次后终于收到他那一句：“行。”好在他什么都没问。 那天晚上下了很大的雨，夏天的闷热，和潮湿的空气在我身上腻成了一层细汗。坐车去他家路上手心都在发烫，灼热像是配合心跳，在掌心潮起潮落。 快到目的地时，我在两杆雨刷器不断挥">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-08-27T04:41:13.000Z">
-<meta property="article:modified_time" content="2023-08-27T07:16:48.448Z">
+<meta property="article:modified_time" content="2023-09-10T07:32:17.931Z">
 <meta property="article:author" content="Yang">
 <meta property="article:tag" content="杂">
 <meta name="twitter:card" content="summary">
@@ -64,9 +64,31 @@
 
   
 
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="UMI" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="UMI" src="">
+  </div>
+
+  <script>
+        var imgUrls = "https://source.unsplash.com/collection/954550/1920x1080".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
+
 
 <header id="allheader" class="site-header" role="banner"
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -197,7 +219,7 @@
 <p><strong>完</strong></p>
 <hr>
 <h3 id="之外的话题："><a href="#之外的话题：" class="headerlink" title="之外的话题："></a>之外的话题：</h3><p>塞林格的《故事破碎之心》，流传最广的翻译版本，把’I think love is a touch and yet not a touch’翻译为“爱是想触碰却收回的手”。这句话传播甚广，我就是因为这句话看的原文。<br>前不久知乎上有人把这句话翻译成了“爱是刹那间的悬而未决”。我个人认为是没有前者翻译版本生动的。“想触碰”表示这个人可能准备伸手，或者已经伸出了手，甚至已经快碰到了，又因为胆怯收了回来。但是“悬而未决”只代表了犹豫，忽略了暗恋之人可能已经努力做了尝试，但是放弃了的遗憾。不过“悬而未决”很符合原文，因为原文故事里的主人公，的确什么都没做，只是望着女孩的脸，内心遐想了多种可能而已。</p>
-<p>经典的翻译版本里，还有一处争议，就是最后一句话把‘In a boy-meets-girl story the boy should always meet the girl.’翻译为：在一个“当男孩遇上女孩”的故事里，总该是男孩主动出击的。<br>这句话很多网友都觉得原文的meet没有强调男孩该出击。有些认为meet应该是相配的含义。<br>就我个人的理解，meet就是相遇，在那样的故事里，他们总是会相遇。但是后续是没有定论的。或许有主动的，或许是互相错过的，或许是主动没戏的等等。但是相遇一定是他们故事开始的前提，就算没结局，在相遇那一刻，就有了故事。就像塞林格的原文那样，虽然主人公最后什么都没做，两个人在不同地方下了车，甚至最后他忘记了那个让他一见钟情的女人。但是对读者来说，这依然是一个故事。<br>“总该是男孩主动出击的”这个翻译版本，能看出译者的遗憾，他认为主动或许有下文，就算失败也值，人总要去试一试。这让我想起雨果在悲惨世界里说的：The first symptom of true love in a man is timidity, in a young woman, boldness. 真爱的第一个征兆，在男人身上是胆怯，在女人身上是大胆。<br>但我还是觉得，遇见了，就是故事。无论后续是什么，只要有人动心了，那他们就有了故事。就算最后什么话都没说。遗憾也是故事的一部分。</p>
+<p>经典的翻译版本里，还有一处争议，就是最后一句话把‘In a boy-meets-girl story the boy should always meet the girl.’翻译为：在一个“当男孩遇上女孩”的故事里，总该是男孩主动出击的。”<br>这句话很多网友都觉得原文的meet没有强调男孩该出击。有些认为meet应该是相配的含义。<br>就我个人的理解，meet就是相遇，在那样的故事里，他们总是会相遇。但是后续是没有定论的。或许有主动的，或许是互相错过的，或许是主动没戏的等等。但是相遇一定是他们故事开始的前提，就算没结局，在相遇那一刻，就有了故事。就像塞林格的原文那样，虽然主人公最后什么都没做，两个人在不同地方下了车，甚至最后他忘记了那个让他一见钟情的女人。但是对读者来说，这依然是一个故事。<br>“总该是男孩主动出击的”这个翻译版本，能看出译者的遗憾，他认为主动或许有下文，人总要去试一试。这让我想起雨果在悲惨世界里说的：The first symptom of true love in a man is timidity, in a young woman, boldness. 真爱的第一个征兆，在男人身上是胆怯，在女人身上是大胆。<br>但我还是觉得，遇见了，就是故事。无论后续是什么，只要有人动心了，那他们就有了故事。就算最后什么话都没说。遗憾也是故事的一部分。</p>
 
       
     </div>
@@ -242,6 +264,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2023/12/23/%E7%BE%8A%E7%BE%8A%E7%9A%842023/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          羊羊的2023
+        
+      </div>
+    </a>
   
   
     <a href="/2023/04/05/%E8%9A%81%E4%B8%8E%E4%BA%BA/" id="article-nav-older" class="article-nav-link-wrap">
@@ -302,6 +333,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
 
 </script>
